@@ -1,11 +1,12 @@
 import { url } from "inspector";
 import Image from "next/image";
 import { title } from "process";
-import React, { ReactNode } from "react";
+import React, { Children, ReactNode } from "react";
 
 export default function Home() {
   const props1 = { title: "タイトル1変数", url: "post.html" };
   const props2 = { title: "タイトル2変数", url: "post2.html" };
+  const propsCSS = { Children };
   return (
     <>
       <Decoration>
