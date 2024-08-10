@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Inter } from "next/font/google";
-import "@/app/globals.css"; // グローバルスタイルを正しいパスでインポート
+import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
