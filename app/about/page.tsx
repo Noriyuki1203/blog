@@ -7,11 +7,24 @@ import {
   TwoColumnMain,
   TwoColumnSidebar,
 } from "@/components/two-columns";
+import Image from "next/image";
+import eyecatch from "@/images/about.jpg";
 
 export default function Home() {
   return (
     <Container>
       <Hero title="About" subtitle="About development activities" />
+
+      <figure>
+        <Image
+          src={eyecatch}
+          alt=""
+          layout="responsive"
+          sizes="(min-width:1152px)1152px,100vw"
+          priority
+          placeholder="blur"
+        />
+      </figure>
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>
@@ -29,6 +42,13 @@ export default function Home() {
             <p>
               今までと違うものを作ることで愛着が湧いてきます。そこで興味を持ったことは小さなことでもいいから取り入れて、良いものを作れるようにしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。
             </p>
+            <Image
+              src="/rocket.jpg"
+              alt="空飛ぶロケット"
+              layout="responsive"
+              width={1980}
+              height={1150}
+            />
           </PostBody>
         </TwoColumnMain>
         <TwoColumnSidebar>
