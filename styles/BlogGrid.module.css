@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gridItem {
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.placeholder {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9のアスペクト比を維持 */
+  background-color: #f0f0f0;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
